@@ -1,0 +1,267 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+}
+
+.my-divs{
+    height: 100vh;
+    overflow: hidden;
+}
+
+#btn1,#btn2,#btn3,#btn4{
+    visibility: hidden;
+    position: absolute;
+
+}
+
+.arrow-down::after{
+    content: "  ";
+    
+    width:40px;
+    height:40px;
+    position: absolute;
+    margin:auto;
+    top:30rem;
+    bottom:0;
+    left:0;
+    right:0;
+    border-right:rgb(255, 252, 245) 5px solid;
+    border-bottom:rgb(255, 252, 245) 5px solid;
+    transform:rotate(45deg);
+    cursor: pointer;
+}
+
+.arrow-up::after{
+    content: "  ";
+    
+    width:40px;
+    height:40px;
+    position: absolute;
+    margin:auto;
+    top:35rem;
+    bottom:0;
+    left:0;
+    right:0;
+    border-right:rgb(255, 252, 245) 5px solid;
+    border-bottom:rgb(255, 252, 245) 5px solid;
+    transform:rotate(225deg);
+    cursor: pointer;
+}
+
+#div1{
+    background-color: rgb(66, 66, 165);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#div1 h1{
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0, 1);
+    margin:10px;
+}
+
+#div1 i{
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0, 1);
+    font-size: 1.5rem;
+}
+
+#div1 p{
+    color:white;
+    text-shadow: 1px 1px 2px rgba(0,0,0, 1);
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    line-height: 2;
+
+}
+
+.img-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.img-div div{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    background-color: brown;
+}
+
+.img-div div img{
+    height:200px;
+    border-radius: 50%;
+}
+
+#div2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+    background-image: url("img/computer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#div2 div {
+    background-color:rgba(0,0,0, 0.3);
+    height: 100vh;
+    width:100vw;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+#div2 img{
+    width:250px;
+    height:250px;
+    margin-top: 10%;
+}
+
+#div2 div h1{
+    color: white;
+    text-shadow: 2px 2px 2px rgba(145, 27, 27, 0.925);
+    margin: 30px auto 30px;
+}
+
+#div2 div p{
+    color: white;
+    letter-spacing: 0.5px;
+    line-height: 2;
+    font-size: 1.3rem;
+}
+
+#div3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 0 10% 0;
+
+}
+
+.skill-title{
+    width:100%;
+    padding:10px;
+
+}
+
+.skill-wrap{
+    display: flex;
+    
+}
+
+.skill{
+    background-color: rgb(105, 105, 92);
+    border: 1px solid black;
+    width:30%;
+    height:auto;
+    margin:5px;
+    padding:5px;
+    display: inline-block;
+
+    
+}
+
+.skill img{
+    width:50%;
+    height: auto;
+    
+}
+
+
+
+
+#div4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+    background-image: url("img/computer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#div4 h1,p{
+    color: white;
+    text-shadow: 2px 2px 2px rgba(145, 27, 27, 0.925);
+    margin: 15px;
+}
+
+#div4 p{
+    font-size: 1.5rem;
+}
+
+.overlay{
+    background-color:rgba(0,0,0, 0.3);
+    height: 100vh;
+    width:100vw;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+
+form input,textarea,button
+{
+    margin: 5px;
+    padding: 10px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+form input:focus{
+    outline: none;
+}
+
+form textarea:focus{
+    outline:none;
+}
+
+form button{
+    border: none;
+    border-radius: 5px;
+    margin-top:10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+}
+
+form button:hover{
+    background-color: black;
+    color: white;
+}
+
+@media(max-width:600px){
+    #div1 div p{
+        font-size: 1rem;
+    }
+}
+
