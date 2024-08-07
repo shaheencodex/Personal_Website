@@ -167,6 +167,7 @@ body{
 
 .skill-wrap{
     display: flex;
+    padding: 20px
     
 }
 
@@ -179,12 +180,18 @@ body{
     padding:5px;
     display: inline-block;
 
-    
+}
+
+.skill h1{
+    position: relative;
+    top:10px
 }
 
 .skill img{
     width:50%;
     height: auto;
+    position: relative;
+    top:10px
     
 }
 
